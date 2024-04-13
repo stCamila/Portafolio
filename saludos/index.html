@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salu2</title>
+    <script>
+        //Comentario de una sola linea
+        document.write('Holi');
+        /* Linea comentada
+        segunda linea comentada
+        sepuede poner 
+        */
+       //Se declaran variables con var, let y const
+       var nombre;
+       var resultado;
+       function saludar(){
+        nombre = document.getElementById('nombre').value;
+        resultado = 'Bienvenido ' + nombre; //Se concatena con el simbolo de +
+        document.getElementById('res').innerHTML = resultado;
+       }
+
+    </script>
+</head>
+<body>
+    <input type="text" name="nombre" id="nombre">
+    <button id="btnSaludar" onclick="saludar();">Saludar</button>
+    <label id="res"></label>
+</body>
+</html>
